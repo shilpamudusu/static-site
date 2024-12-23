@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> - BR.</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body class="bg-gray-100">
+    <header class="bg-white shadow-md">
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="/" class="text-2xl font-bold">BR.</a>
+            <div class="space-x-4">
+                <a href="/women" class="text-gray-600 hover:text-black">Women</a>
+                <a href="/men" class="text-gray-600 hover:text-black">Men</a>
+                <a href="/kids" class="text-gray-600 hover:text-black">Kids</a>
+                <a href="/sports" class="text-gray-600 hover:text-black">Sports</a>
+                <a href="/brands" class="text-gray-600 hover:text-black">Brands</a>
+                <a href="/new" class="text-gray-600 hover:text-black">New</a>
+                <a href="/sale" class="text-red-600 hover:text-red-800">Sale</a>
+            </div>
+            <div class="relative">
+                <input type="search" placeholder="Search" id="search" class="border rounded-full py-2 px-4 focus:outline-none focus:ring-2 focus:ring-black">
+            </div>
+        </nav>
+    </header>
+    <main>
+        
+<div class="product-container">
+    <div class="product-gallery">
+        <img 
+            src="/images/hoka-clifton-1.jpg" 
+            alt="Clifton 8" 
+            class="main-image" 
+            id="main-image"
+        >
+        <div class="thumbnail-container">
+            
+            <img 
+                src="/images/hoka-clifton-1.jpg" 
+                alt="Clifton 8" 
+                class="thumbnail active"
+                onclick="updateMainImage(this.src)"
+            >
+            
+            <img 
+                src="/images/hoka-clifton-2.jpg" 
+                alt="Clifton 8" 
+                class="thumbnail "
+                onclick="updateMainImage(this.src)"
+            >
+            
+            <img 
+                src="/images/hoka-clifton-3.jpg" 
+                alt="Clifton 8" 
+                class="thumbnail "
+                onclick="updateMainImage(this.src)"
+            >
+            
+            <img 
+                src="/images/hoka-clifton-4.jpg" 
+                alt="Clifton 8" 
+                class="thumbnail "
+                onclick="updateMainImage(this.src)"
+            >
+            
+        </div>
+    </div>
+    
+    <div class="product-info">
+        <div class="brand-badge">
+            <img src="/images/hoka-logo.png" alt="Hoka One One" width="24" height="24">
+            <span>Hoka One One</span>
+        </div>
+        
+        <h1 class="product-title">Clifton 8</h1>
+        
+        <div class="star-rating">
+            
+                ★
+            
+                ★
+            
+                ★
+            
+                ★
+            
+                ★
+            
+            <span>(2 reviews)</span>
+        </div>
+        
+        <p class="product-price">$130</p>
+        
+        <div class="color-section">
+            <h3>Color</h3>
+            <div class="color-options">
+                
+                <div class="color-option" data-color="blue/white">
+                    Blue/White
+                </div>
+                
+                <div class="color-option" data-color="black/grey">
+                    Black/Grey
+                </div>
+                
+                <div class="color-option" data-color="orange/yellow">
+                    Orange/Yellow
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="size-section">
+            <h3>Size</h3>
+            <div class="size-options">
+                
+                <div class="size-option">
+                    39
+                </div>
+                
+                <div class="size-option">
+                    40
+                </div>
+                
+                <div class="size-option">
+                    41
+                </div>
+                
+                <div class="size-option">
+                    42
+                </div>
+                
+                <div class="size-option">
+                    43
+                </div>
+                
+                <div class="size-option">
+                    44
+                </div>
+                
+                <div class="size-option">
+                    45
+                </div>
+                
+                <div class="size-option">
+                    46
+                </div>
+                
+                <div class="size-option">
+                    47
+                </div>
+                
+            </div>
+        </div>
+        
+        <button class="add-to-cart">Add to cart</button>
+        
+        <div class="reviews-section">
+            <h2>Reviews</h2>
+            <div class="rating-summary">
+                <h3>4.7 out of 5</h3>
+                
+                <div class="rating-distribution">
+                    <span>1★</span>
+                    <div class="rating-bar">
+                        <div class="rating-fill" style="width: 50%"></div>
+                    </div>
+                    <span>1</span>
+                </div>
+                
+                <div class="rating-distribution">
+                    <span>2★</span>
+                    <div class="rating-bar">
+                        <div class="rating-fill" style="width: 100%"></div>
+                    </div>
+                    <span>2</span>
+                </div>
+                
+                <div class="rating-distribution">
+                    <span>3★</span>
+                    <div class="rating-bar">
+                        <div class="rating-fill" style="width: 250%"></div>
+                    </div>
+                    <span>5</span>
+                </div>
+                
+                <div class="rating-distribution">
+                    <span>4★</span>
+                    <div class="rating-bar">
+                        <div class="rating-fill" style="width: 500%"></div>
+                    </div>
+                    <span>10</span>
+                </div>
+                
+                <div class="rating-distribution">
+                    <span>5★</span>
+                    <div class="rating-bar">
+                        <div class="rating-fill" style="width: 1600%"></div>
+                    </div>
+                    <span>32</span>
+                </div>
+                
+            </div>
+            
+            <div class="reviews-list">
+                
+                <div class="review-card">
+                    <div class="review-header">
+                        <img 
+                            src="/images/avatar-15.jpg" 
+                            alt="Emma L." 
+                            class="reviewer-avatar"
+                            width="40"
+                            height="40"
+                        >
+                        <div>
+                            <h4>Emma L.</h4>
+                            <div class="star-rating">
+                                
+                                    ★
+                                
+                                    ★
+                                
+                                    ★
+                                
+                                    ★
+                                
+                                    ★
+                                
+                            </div>
+                        </div>
+                        <span class="review-date">3 days ago</span>
+                    </div>
+                    <p>Incredibly light and cushioned. Perfect for long runs!</p>
+                </div>
+                
+                <div class="review-card">
+                    <div class="review-header">
+                        <img 
+                            src="/images/avatar-16.jpg" 
+                            alt="Alex W." 
+                            class="reviewer-avatar"
+                            width="40"
+                            height="40"
+                        >
+                        <div>
+                            <h4>Alex W.</h4>
+                            <div class="star-rating">
+                                
+                                    ★
+                                
+                                    ★
+                                
+                                    ★
+                                
+                                    ★
+                                
+                                    ☆
+                                
+                            </div>
+                        </div>
+                        <span class="review-date">1 month ago</span>
+                    </div>
+                    <p>Great shoes, but took some time to get used to the unique shape.</p>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+/* Additional CSS to fix image display */
+.main-image {
+    width: 100%;
+    height: auto;
+    max-height: 600px;
+    object-fit: cover;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+}
+
+.thumbnail {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: border-color 0.2s ease;
+}
+
+.thumbnail.active {
+    border-color: #000;
+}
+
+.reviewer-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: #f5f5f5;
+}
+
+.brand-badge img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    border-radius: 4px;
+}
+
+/* Enhanced color options */
+.color-options {
+    display: flex;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+.color-option {
+    width: 60px;
+    height: 40px;
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 0.875rem;
+    transition: all 0.2s ease;
+}
+
+.color-option:hover {
+    background-color: #f5f5f5;
+}
+
+.color-option.active {
+    border-color: #000;
+    background-color: #f5f5f5;
+}
+
+/* Enhanced size options */
+.size-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.size-option {
+    width: 60px;
+    height: 40px;
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 0.875rem;
+    transition: all 0.2s ease;
+}
+
+.size-option:hover {
+    background-color: #f5f5f5;
+}
+
+.size-option.active {
+    border-color: #000;
+    background-color: #f5f5f5;
+}
+
+/* Enhanced add to cart button */
+.add-to-cart {
+    margin-top: 1rem;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.add-to-cart:hover {
+    background-color: #333;
+}
+</style>
+
+<script>
+function updateMainImage(src) {
+    const mainImage = document.getElementById('main-image');
+    mainImage.src = src;
+    
+    document.querySelectorAll('.thumbnail').forEach(thumb => {
+        thumb.classList.toggle('active', thumb.src === src);
+    });
+}
+
+document.querySelectorAll('.color-option').forEach(option => {
+    option.addEventListener('click', () => {
+        document.querySelectorAll('.color-option').forEach(opt => opt.classList.remove('active'));
+        option.classList.add('active');
+    });
+});
+
+document.querySelectorAll('.size-option').forEach(option => {
+    option.addEventListener('click', () => {
+        document.querySelectorAll('.size-option').forEach(opt => opt.classList.remove('active'));
+        option.classList.add('active');
+    });
+});
+</script>
+    </main>
+    <footer class="bg-gray-800 text-white py-8 mt-16">
+        <div class="container mx-auto px-4">
+            <p class="text-center">&copy; 2023 BR. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <script src="/assets/js/search.js"></script>
+    <script src="/assets/js/main.js"></script>
+</body>
+</html>

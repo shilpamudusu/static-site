@@ -1,0 +1,410 @@
+[
+    {
+      "id": "1",
+      "brand": "Reebok",
+      "name": "Reebok Zig Kinetica 3",
+      "description": "Advanced running shoes with Zig technology for enhanced comfort and performance",
+      "price": 199.00,
+      "images": [
+        "/images/reebok-zig-1.jpg",
+        "/images/reebok-zig-2.jpg"
+      ],
+      "brandLogo": "/images/reebok-logo.png",
+      "colors": ["White", "Black", "Gray"],
+      "sizes": [40.5, 41, 42, 43, 43.5, 44, 44.5, 45, 46],
+      "category": "Shoes",
+      "rating": 4.8,
+      "reviews": [
+        {
+          "user": "Helen M.",
+          "avatar": "/images/avatar-1.jpg",
+          "rating": 5,
+          "comment": "Excellent running shoes. It turns very sharply on the foot.",
+          "date": "Yesterday"
+        },
+        {
+          "user": "Ann D.",
+          "avatar": "/images/avatar-2.jpg",
+          "rating": 4,
+          "comment": "Great comfort for daily use.",
+          "date": "3 days ago"
+        }
+      ],
+      "ratingDistribution": {
+        "5": 28,
+        "4": 9,
+        "3": 4,
+        "2": 1,
+        "1": 1
+      }
+    },
+    {
+        "id": "2",
+        "brand": "Nike",
+        "name": "Nike Air Zoom Pegasus 38",
+        "description": "Versatile running shoes with responsive cushioning for everyday runs",
+        "price": 120.00,
+        "images": [
+          "/images/nike-pegasus-1.jpg",
+          "/images/nike-pegasus-2.jpg",
+          "/images/nike-pegasus-3.jpg",
+          "/images/nike-pegasus-4.jpg"
+        ],
+        "brandLogo": "/images/nike-logo.png",
+        "colors": ["Black", "White", "Blue"],
+        "sizes": [40, 41, 42, 43, 44, 45, 46],
+        "category": "Shoes",
+        "rating": 4.7,
+        "reviews": [
+          {
+            "user": "Mike R.",
+            "avatar": "/images/avatar-3.jpg",
+            "rating": 5,
+            "comment": "Perfect for my daily runs. Great cushioning!",
+            "date": "1 week ago"
+          },
+          {
+            "user": "Sarah L.",
+            "avatar": "/images/avatar-4.jpg",
+            "rating": 4,
+            "comment": "Comfortable, but runs a bit narrow.",
+            "date": "2 weeks ago"
+          }
+        ],
+        "ratingDistribution": {
+          "5": 32,
+          "4": 12,
+          "3": 3,
+          "2": 2,
+          "1": 1
+        }
+      },
+      {
+        "id": "3",
+        "brand": "Adidas",
+        "name": "Adidas Ultraboost 21",
+        "description": "High-performance running shoes with responsive Boost midsole",
+        "price": 180.00,
+        "images": [
+          "/images/adidas-ultraboost-1.jpg",
+          "/images/adidas-ultraboost-2.jpg",
+          "/images/adidas-ultraboost-3.jpg",
+          "/images/adidas-ultraboost-4.jpg"
+        ],
+        "brandLogo": "/images/adidas-logo.png",
+        "colors": ["Core Black", "Cloud White", "Solar Yellow"],
+        "sizes": [39, 40, 41, 42, 43, 44, 45, 46, 47],
+        "category": "Shoes",
+        "rating": 4.9,
+        "reviews": [
+          {
+            "user": "Tom K.",
+            "avatar": "/images/avatar-5.jpg",
+            "rating": 5,
+            "comment": "Best running shoes I've ever owned. Incredible comfort!",
+            "date": "3 days ago"
+          },
+          {
+            "user": "Emily W.",
+            "avatar": "/images/avatar-6.jpg",
+            "rating": 5,
+            "comment": "Perfect for long-distance runs. Great energy return!",
+            "date": "1 week ago"
+          }
+        ],
+        "ratingDistribution": {
+          "5": 45,
+          "4": 8,
+          "3": 2,
+          "2": 0,
+          "1": 0
+        }
+      },
+      {
+        "id": "4",
+        "brand": "Under Armour",
+        "name": "UA HOVR Phantom 2",
+        "description": "Connected running shoes with UA HOVR technology for a zero-gravity feel",
+        "price": 150.00,
+        "images": [
+          "/images/ua-phantom-1.jpg",
+          "/images/ua-phantom-2.jpg",
+          "/images/ua-phantom-3.jpg",
+          "/images/ua-phantom-4.jpg"
+        ],
+        "brandLogo": "/images/under-armour-logo.png",
+        "colors": ["Black", "White", "Red"],
+        "sizes": [40, 41, 42, 43, 44, 45, 46],
+        "category": "Shoes",
+        "rating": 4.6,
+        "reviews": [
+          {
+            "user": "Chris M.",
+            "avatar": "/images/avatar-7.jpg",
+            "rating": 5,
+            "comment": "Great shoes for both running and gym workouts!",
+            "date": "2 weeks ago"
+          },
+          {
+            "user": "Lisa R.",
+            "avatar": "/images/avatar-8.jpg",
+            "rating": 4,
+            "comment": "Comfortable, but the connected features could be improved.",
+            "date": "1 month ago"
+          }
+        ],
+        "ratingDistribution": {
+          "5": 28,
+          "4": 15,
+          "3": 5,
+          "2": 1,
+          "1": 1
+        }
+      },
+      {
+        "id": "5",
+        "brand": "New Balance",
+        "name": "Fresh Foam 1080v11",
+        "description": "Plush cushioning running shoes for maximum comfort on long runs",
+        "price": 150.00,
+        "images": [
+          "/images/nb-1080-1.jpg",
+          "/images/nb-1080-2.jpg",
+          "/images/nb-1080-3.jpg",
+          "/images/nb-1080-4.jpg"
+        ],
+        "brandLogo": "/images/new-balance-logo.png",
+        "colors": ["Blue", "Black", "White"],
+        "sizes": [40, 41, 42, 43, 44, 45, 46, 47],
+        "category": "Shoes",
+        "rating": 4.8,
+        "reviews": [
+          {
+            "user": "David L.",
+            "avatar": "/images/avatar-9.jpg",
+            "rating": 5,
+            "comment": "Incredibly comfortable for long-distance running!",
+            "date": "1 week ago"
+          },
+          {
+            "user": "Rachel S.",
+            "avatar": "/images/avatar-10.jpg",
+            "rating": 4,
+            "comment": "Great cushioning, but a bit heavy for speed work.",
+            "date": "3 weeks ago"
+          }
+        ],
+        "ratingDistribution": {
+          "5": 35,
+          "4": 10,
+          "3": 3,
+          "2": 1,
+          "1": 1
+        }
+      },
+      {
+        "id": "6",
+        "brand": "ASICS",
+        "name": "GEL-Nimbus 23",
+        "description": "Premium neutral running shoes with GEL technology for superior shock absorption",
+        "price": 150.00,
+        "images": [
+          "/images/asics-nimbus-1.jpg",
+          "/images/asics-nimbus-2.jpg",
+          "/images/asics-nimbus-3.jpg",
+          "/images/asics-nimbus-4.jpg"
+        ],
+        "brandLogo": "/images/asics-logo.png",
+        "colors": ["Black/White", "Blue/Orange", "Grey/Pink"],
+        "sizes": [39, 40, 41, 42, 43, 44, 45, 46],
+        "category": "Shoes",
+        "rating": 4.7,
+        "reviews": [
+          {
+            "user": "Jennifer K.",
+            "avatar": "/images/avatar-11.jpg",
+            "rating": 5,
+            "comment": "Perfect for my sensitive feet. Great cushioning!",
+            "date": "2 days ago"
+          },
+          {
+            "user": "Mark T.",
+            "avatar": "/images/avatar-12.jpg",
+            "rating": 4,
+            "comment": "Very comfortable, but a bit pricey.",
+            "date": "1 month ago"
+          }
+        ],
+        "ratingDistribution": {
+          "5": 30,
+          "4": 12,
+          "3": 5,
+          "2": 2,
+          "1": 1
+        }
+      },
+      {
+        "id": "7",
+        "brand": "Brooks",
+        "name": "Ghost 14",
+        "description": "Smooth-riding neutral running shoes with balanced, soft cushioning",
+        "price": 130.00,
+        "images": [
+          "/images/brooks-ghost-1.jpg",
+          "/images/brooks-ghost-2.jpg",
+          "/images/brooks-ghost-3.jpg",
+          "/images/brooks-ghost-4.jpg"
+        ],
+        "brandLogo": "/images/brooks-logo.png",
+        "colors": ["Black/Pearl", "Blue/Orange", "White/Pink"],
+        "sizes": [38, 39, 40, 41, 42, 43, 44, 45, 46],
+        "category": "Shoes",
+        "rating": 4.8,
+        "reviews": [
+          {
+            "user": "Laura M.",
+            "avatar": "/images/avatar-13.jpg",
+            "rating": 5,
+            "comment": "My go-to shoes for everyday runs. So comfortable!",
+            "date": "1 week ago"
+          },
+          {
+            "user": "Steve R.",
+            "avatar": "/images/avatar-14.jpg",
+            "rating": 4,
+            "comment": "Great for long runs, but could use more responsiveness for speed work.",
+            "date": "2 weeks ago"
+          }
+        ],
+        "ratingDistribution": {
+          "5": 38,
+          "4": 8,
+          "3": 3,
+          "2": 1,
+          "1": 0
+        }
+      },
+      {
+        "id": "8",
+        "brand": "Hoka One One",
+        "name": "Clifton 8",
+        "description": "Lightweight, well-cushioned running shoes for a smooth ride",
+        "price": 130.00,
+        "images": [
+          "/images/hoka-clifton-1.jpg",
+          "/images/hoka-clifton-2.jpg",
+          "/images/hoka-clifton-3.jpg",
+          "/images/hoka-clifton-4.jpg"
+        ],
+        "brandLogo": "/images/hoka-logo.png",
+        "colors": ["Blue/White", "Black/Grey", "Orange/Yellow"],
+        "sizes": [39, 40, 41, 42, 43, 44, 45, 46, 47],
+        "category": "Shoes",
+        "rating": 4.7,
+        "reviews": [
+          {
+            "user": "Emma L.",
+            "avatar": "/images/avatar-15.jpg",
+            "rating": 5,
+            "comment": "Incredibly light and cushioned. Perfect for long runs!",
+            "date": "3 days ago"
+          },
+          {
+            "user": "Alex W.",
+            "avatar": "/images/avatar-16.jpg",
+            "rating": 4,
+            "comment": "Great shoes, but took some time to get used to the unique shape.",
+            "date": "1 month ago"
+          }
+        ],
+        "ratingDistribution": {
+          "5": 32,
+          "4": 10,
+          "3": 5,
+          "2": 2,
+          "1": 1
+        }
+      },
+      {
+        "id": "9",
+        "brand": "Saucony",
+        "name": "Ride 14",
+        "description": "Reliable, neutral running shoes with a perfect balance of cushioning and responsiveness",
+        "price": 130.00,
+        "images": [
+          "/images/saucony-ride-1.jpg",
+          "/images/saucony-ride-2.jpg",
+          "/images/saucony-ride-3.jpg",
+          "/images/saucony-ride-4.jpg"
+        ],
+        "brandLogo": "/images/saucony-logo.png",
+        "colors": ["Alloy/Black", "Blue/Silver", "Red/White"],
+        "sizes": [40, 41, 42, 43, 44, 45, 46],
+        "category": "Shoes",
+        "rating": 4.6,
+        "reviews": [
+          {
+            "user": "Michael B.",
+            "avatar": "/images/avatar-17.jpg",
+            "rating": 5,
+            "comment": "Great all-around running shoes. Comfortable for both short and long runs.",
+            "date": "2 weeks ago"
+          },
+          {
+            "user": "Sophie T.",
+            "avatar": "/images/avatar-18.jpg",
+            "rating": 4,
+            "comment": "Good cushioning, but I wish they had more color options.",
+            "date": "1 month ago"
+          }
+        ],
+        "ratingDistribution": {
+          "5": 25,
+          "4": 15,
+          "3": 7,
+          "2": 2,
+          "1": 1
+        }
+      },
+      {
+        "id": "10",
+        "brand": "Mizuno",
+        "name": "Wave Rider 25",
+        "description": "Versatile, neutral running shoes with Mizuno's signature Wave plate technology",
+        "price": 135.00,
+        "images": [
+          "/images/mizuno-rider-1.jpg",
+          "/images/mizuno-rider-2.jpg",
+          "/images/mizuno-rider-3.jpg",
+          "/images/mizuno-rider-4.jpg"
+        ],
+        "brandLogo": "/images/mizuno-logo.png",
+        "colors": ["Blue/Silver", "Black/Gold", "White/Red"],
+        "sizes": [39, 40, 41, 42, 43, 44, 45, 46],
+        "category": "Shoes",
+        "rating": 4.7,
+        "reviews": [
+          {
+            "user": "Daniel K.",
+            "avatar": "/images/avatar-19.jpg",
+            "rating": 5,
+            "comment": "Love the responsiveness of the Wave plate. Great for tempo runs!",
+            "date": "1 week ago"
+          },
+          {
+            "user": "Olivia R.",
+            "avatar": "/images/avatar-20.jpg",
+            "rating": 4,
+            "comment": "Solid shoes with good support, but a bit firm for my liking.",
+            "date": "3 weeks ago"
+          }
+        ],
+        "ratingDistribution": {
+          "5": 30,
+          "4": 12,
+          "3": 5,
+          "2": 2,
+          "1": 1
+        }
+      }
+  ]

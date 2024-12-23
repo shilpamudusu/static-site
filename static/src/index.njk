@@ -1,0 +1,52 @@
+---
+layout: layout.njk
+title: Home
+---
+
+<div class="container mx-auto px-4 py-8">
+  <h1 class="text-3xl font-bold mb-8">Welcome to Static E-commerce</h1>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="product-list">
+    {% for product in products %}
+      <div class="product-card border rounded-lg overflow-hidden shadow-lg">
+        <img 
+          src="{{ product.images[0] }}" 
+          alt="{{ product.name }}" 
+          class="w-full h-64 object-cover"
+        >
+        <div class="p-4">
+          <div class="flex items-center mb-2">
+            <img 
+              src="{{ product.brandLogo }}" 
+              alt="{{ product.brand }}" 
+              class="w-6 h-6 mr-2"
+            >
+            <span class="text-sm text-gray-600">{{ product.brand }}</span>
+          </div>
+          <h2 class="text-xl font-semibold mb-2">{{ product.name }}</h2>
+          <div class="flex items-center mb-2">
+            <div class="text-yellow-400">
+              {% for i in range(0, 5) %}
+                {% if i < product.rating %}★{% else %}☆{% endif %}
+              {% endfor %}
+            </div>
+            <span class="text-sm text-gray-600 ml-2">({{ product.reviews.length }} reviews)</span>
+          </div>
+          <p class="text-lg font-bold mb-4">${{ product.price }}</p>
+          <a href="/product/{{ product.id }}/" class="bg-black text-white py-2 px-4 rounded hover:bg-gray-800 transition duration-300">
+            View Details
+          </a>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+<style>
+  .product-card {
+    transition: transform 0.3s ease-in-out;
+  }
+  .product-card:hover {
+    transform: translateY(-5px);
+  }
+</style>

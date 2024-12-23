@@ -1,0 +1,256 @@
+---
+layout: layout.njk
+pagination:
+    data: products
+    size: 1
+    alias: product
+permalink: "product/{{ product.id }}/"
+---
+
+<div class="product-container">
+    <div class="product-gallery">
+        <img 
+            src="{{ product.images[0] }}" 
+            alt="{{ product.name }}" 
+            class="main-image" 
+            id="main-image"
+        >
+        <div class="thumbnail-container">
+            {% for image in product.images %}
+            <img 
+                src="{{ image }}" 
+                alt="{{ product.name }}" 
+                class="thumbnail {% if loop.first %}active{% endif %}"
+                onclick="updateMainImage(this.src)"
+            >
+            {% endfor %}
+        </div>
+    </div>
+    
+    <div class="product-info">
+        <div class="brand-badge">
+            <img src="{{ product.brandLogo }}" alt="{{ product.brand }}" width="24" height="24">
+            <span>{{ product.brand }}</span>
+        </div>
+        
+        <h1 class="product-title">{{ product.name }}</h1>
+        
+        <div class="star-rating">
+            {% for i in range(0, 5) %}
+                {% if i < product.rating %}★{% else %}☆{% endif %}
+            {% endfor %}
+            <span>({{ product.reviews.length }} reviews)</span>
+        </div>
+        
+        <p class="product-price">${{ product.price }}</p>
+        
+        <div class="color-section">
+            <h3>Color</h3>
+            <div class="color-options">
+                {% for color in product.colors %}
+                <div class="color-option" data-color="{{ color | lower }}">
+                    {{ color }}
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        
+        <div class="size-section">
+            <h3>Size</h3>
+            <div class="size-options">
+                {% for size in product.sizes %}
+                <div class="size-option">
+                    {{ size }}
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        
+        <button class="add-to-cart">Add to cart</button>
+        
+        <div class="reviews-section">
+            <h2>Reviews</h2>
+            <div class="rating-summary">
+                <h3>{{ product.rating }} out of 5</h3>
+                {% for rating, count in product.ratingDistribution %}
+                <div class="rating-distribution">
+                    <span>{{ rating }}★</span>
+                    <div class="rating-bar">
+                        <div class="rating-fill" style="width: {{ (count / product.reviews.length * 100) }}%"></div>
+                    </div>
+                    <span>{{ count }}</span>
+                </div>
+                {% endfor %}
+            </div>
+            
+            <div class="reviews-list">
+                {% for review in product.reviews %}
+                <div class="review-card">
+                    <div class="review-header">
+                        <img 
+                            src="{{ review.avatar }}" 
+                            alt="{{ review.user }}" 
+                            class="reviewer-avatar"
+                            width="40"
+                            height="40"
+                        >
+                        <div>
+                            <h4>{{ review.user }}</h4>
+                            <div class="star-rating">
+                                {% for i in range(0, 5) %}
+                                    {% if i < review.rating %}★{% else %}☆{% endif %}
+                                {% endfor %}
+                            </div>
+                        </div>
+                        <span class="review-date">{{ review.date }}</span>
+                    </div>
+                    <p>{{ review.comment }}</p>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+/* Additional CSS to fix image display */
+.main-image {
+    width: 100%;
+    height: auto;
+    max-height: 600px;
+    object-fit: cover;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+}
+
+.thumbnail {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: border-color 0.2s ease;
+}
+
+.thumbnail.active {
+    border-color: #000;
+}
+
+.reviewer-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: #f5f5f5;
+}
+
+.brand-badge img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    border-radius: 4px;
+}
+
+/* Enhanced color options */
+.color-options {
+    display: flex;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+.color-option {
+    width: 60px;
+    height: 40px;
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 0.875rem;
+    transition: all 0.2s ease;
+}
+
+.color-option:hover {
+    background-color: #f5f5f5;
+}
+
+.color-option.active {
+    border-color: #000;
+    background-color: #f5f5f5;
+}
+
+/* Enhanced size options */
+.size-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.size-option {
+    width: 60px;
+    height: 40px;
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 0.875rem;
+    transition: all 0.2s ease;
+}
+
+.size-option:hover {
+    background-color: #f5f5f5;
+}
+
+.size-option.active {
+    border-color: #000;
+    background-color: #f5f5f5;
+}
+
+/* Enhanced add to cart button */
+.add-to-cart {
+    margin-top: 1rem;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.add-to-cart:hover {
+    background-color: #333;
+}
+</style>
+
+<script>
+function updateMainImage(src) {
+    const mainImage = document.getElementById('main-image');
+    mainImage.src = src;
+    
+    document.querySelectorAll('.thumbnail').forEach(thumb => {
+        thumb.classList.toggle('active', thumb.src === src);
+    });
+}
+
+document.querySelectorAll('.color-option').forEach(option => {
+    option.addEventListener('click', () => {
+        document.querySelectorAll('.color-option').forEach(opt => opt.classList.remove('active'));
+        option.classList.add('active');
+    });
+});
+
+document.querySelectorAll('.size-option').forEach(option => {
+    option.addEventListener('click', () => {
+        document.querySelectorAll('.size-option').forEach(opt => opt.classList.remove('active'));
+        option.classList.add('active');
+    });
+});
+</script>
